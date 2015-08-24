@@ -2,6 +2,10 @@
 --
 -- main.lua
 -- 本範例示範如何使用movieclip.lua的function，用以產生連續動畫
+-- 		mc = movieClip.newAnim(table) 建立movieclip 
+--		mc.stopAtFrame(index) 停在指定幀
+--		mc.setSpeed(float)	設定速度，越小越慢
+--		mc.play(table)	播放movieclip
 -- Author: Zack Lin
 -- Time: 2015/4/9
 -----------------------------------------------------------------------------------------
@@ -28,7 +32,7 @@ _SCREEN.CENTER = {
 local mc
 local btn_play
 local btn_stop
-
+--函式
 local initial
 local handleButtonEvent
 --=======================================================================================
