@@ -1,11 +1,12 @@
 -----------------------------------------------------------------------------------------
 --
 -- main.lua
--- 本範例示範如何使用movieclip.lua的function，用以產生連續動畫
+-- 1.本範例示範如何使用movieclip.lua的function，用以產生連續動畫
 -- 		mc = movieClip.newAnim(table) 建立movieclip 
 --		mc.stopAtFrame(index) 停在指定幀
 --		mc.setSpeed(float)	設定速度，越小越慢
 --		mc.play(table)	播放movieclip
+-- 2.提醒支援Png.Jpg以及Gif，但是Gif無法播放動畫
 -- Author: Zack Lin
 -- Time: 2015/4/9
 -----------------------------------------------------------------------------------------
@@ -16,6 +17,7 @@
 display.setStatusBar( display.HiddenStatusBar )
 
 --需放入movieclip.lua，並用require匯入
+
 local movieClip = require( "movieclip" )
 local widget = require( "widget" )
 --=======================================================================================
